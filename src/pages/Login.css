@@ -1,0 +1,236 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1920&auto=format&fit=crop")
+    center/cover no-repeat;
+}
+
+.login-page::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+}
+
+.login-card {
+  position: relative;
+  width: 400px;
+  padding: 2.5rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: white;
+  text-align: center;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.35);
+  animation: fadeUp 1s ease-out forwards;
+}
+
+.login-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.login-subtitle {
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.login-form {
+  text-align: left;
+}
+
+.login-form label {
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  display: block;
+  opacity: 0.9;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.4rem;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: background 0.3s;
+}
+
+.login-form input::placeholder {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.login-form input:focus {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.login-btn {
+  width: 100%;
+  padding: 0.8rem;
+  font-weight: 600;
+  background: #d6a84c;
+  border: none;
+  color: white;
+  border-radius: 12px;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #f0c86f;
+  transform: translateY(-3px);
+}
+
+.signup-prompt {
+  margin-top: 1.4rem;
+  font-size: 0.9rem;
+}
+
+.signup-prompt a {
+  color: #ffd479;
+  font-weight: bold;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* ===== Global Look (Palette A) ===== */
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1920&auto=format&fit=crop")
+    center/cover no-repeat;
+  position: relative;
+  color: #3a3224;
+}
+
+.login-page::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 244, 231, 0.45);
+  backdrop-filter: blur(8px);
+}
+
+/* ===== Glass Card ===== */
+.login-card {
+  position: relative;
+  width: 400px;
+  padding: 2.8rem;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.42);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+  animation: fadeUp 0.9s ease-out forwards;
+  text-align: center;
+}
+
+/* ===== Title / Subtitle ===== */
+.login-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #3c2f1d;
+}
+
+.login-subtitle {
+  margin-top: 0.3rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  opacity: 0.75;
+  font-weight: 500;
+}
+
+/* ===== Form ===== */
+.login-form {
+  text-align: left;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  color: #3c2f1d;
+  font-weight: 600;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #cfc1a6;
+  background: rgba(255, 255, 255, 0.65);
+  font-size: 1rem;
+  color: #3c2f1d;
+  transition: 0.3s;
+}
+
+.login-form input::placeholder {
+  color: #766b5a;
+}
+
+.login-form input:focus {
+  border-color: #b8924c;
+  background: #fff4e7;
+}
+
+/* ===== Button ===== */
+.login-btn {
+  width: 100%;
+  padding: 0.9rem;
+  font-size: 1.05rem;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  background: #c9a14b; /* warm gold */
+  transition: 0.3s;
+  box-shadow: 0 6px 15px rgba(201, 161, 75, 0.35);
+}
+
+.login-btn:hover {
+  background: #e3be6a;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(201, 161, 75, 0.55);
+}
+
+/* ===== Bottom Link ===== */
+.signup-prompt {
+  margin-top: 1.6rem;
+  font-size: 0.95rem;
+  color: #3d3527;
+}
+
+.signup-prompt a {
+  color: #b8822f;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.signup-prompt a:hover {
+  color: #d6a44e;
+}
+
+/* ===== Fade Animation ===== */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
